@@ -13,11 +13,11 @@
 <body>
     
     <!-- Header Started -->
-     <header class="w-11/12 mx-auto border-b">
+     <header class="w-11/12 mx-auto border-b border-[#17171733] border-opacity-20">
         
         <!-- Navbar Started -->
-         <nav class="flex justify-between items-center my-8">
-            <div class="w-40">
+         <nav class="flex justify-between items-center my-8 gap-20 md:gap-0">
+            <div class="w-40 hidden md:block">
                 <img src="./assets/Logo.png" alt="">
             </div>
             <div class="input input-bordered flex items-center gap-2 w-96">
@@ -38,17 +38,32 @@
             </div>
          </nav>
         <!-- Navbar Ended -->
-         
+
      </header>
     <!-- Header Ended -->
 
     <!-- Main Started -->
-     <main></main>
+     <main>
+        
+        <!-- Categories Section Started -->
+         <section id="categories" class="my-8 w-11/12 mx-auto justify-center flex gap-6"></section>
+        <!-- Categories Section Ended -->
+
+        <!-- Videos Section Started -->
+         <section class="w-11/12 mx-auto flex justify-center">
+            <div id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+         </section>
+        <!-- Videos Section Ended -->
+
+     </main>
     <!-- Main Ended -->
 
     <!-- Footer Started -->
      <footer></footer>
     <!-- Footer Ended -->
 
+
+
+    <script src="./scripts/video.js"></script>
 </body>
 </html>
