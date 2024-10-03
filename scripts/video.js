@@ -36,6 +36,18 @@ const videosData = async() => {
 const getVideos = (videos) => {
     const videosSection = document.getElementById('videos')
     videosSection.innerHTML = ""
+    if(videos.length === 0){
+        videosSection.classList.remove('grid')
+        videosSection.innerHTML = `
+        <div class="mt-20 flex justify-center flex-col gap-5 items-center w-[300px] mx-auto">
+            <img src="./assets/Icon.png" alt="">
+            <h class="text-base font-bold">No Content There In This Category</h>
+        </div>
+        `
+    }
+    else{
+        videosSection.classList.add('grid')
+    }
     videos.forEach(video => {
         const videosCard = document.createElement('div');
         videosCard.innerHTML = `
